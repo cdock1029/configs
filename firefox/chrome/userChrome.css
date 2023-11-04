@@ -1,0 +1,27 @@
+#TabsToolbar-customization-target {
+	visibility: collapse !important;
+}
+
+/* #main-window #tabbrowser-tabs {
+	visibility: collapse !important;
+	min-height: 0px !important;
+	height: 0px !important;
+}
+
+#main-window #alltabs-button {
+	visibility: collapse !important;
+}
+
+#new-tab-button {
+	visibility: collapse !important;
+}
+*/
+
+#TabsToolbar .titlebar-buttonbox-container {
+  visibility: collapse;
+}
+
+#sidebar-header {
+	visibility: collapse;
+}
+
