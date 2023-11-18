@@ -81,6 +81,6 @@
 
 ### Telegram
 
-flatpak command line arg to fix rendering resolution:
+flatpak QT environment variable to fix rendering resolution:
 
     flatpak override --env=QT_SCALE_FACTOR_ROUNDING_POLICY=Round org.telegram.desktop
