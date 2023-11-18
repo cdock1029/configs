@@ -29,6 +29,12 @@
 - Input Devices
   - Keyboard: Delay 356ms
 
+### Telegram
+
+flatpak QT environment variable to fix rendering resolution:
+
+    flatpak override --env=QT_SCALE_FACTOR_ROUNDING_POLICY=Round org.telegram.desktop
+
 ## Progamming
 
 ### Git
@@ -78,9 +84,3 @@
   - gfx.webrender.all true
   - gfx.webrender.compositor true
   - gfx.webrender.compositor.force-enabled
-
-### Telegram
-
-flatpak QT environment variable to fix rendering resolution:
-
-    flatpak override --env=QT_SCALE_FACTOR_ROUNDING_POLICY=Round org.telegram.desktop
