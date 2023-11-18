@@ -37,6 +37,7 @@
   - git-credential-libsecret
   - libsecret-devel
   -     git config --global credential.helper /usr/libexec/git/git-credential-libsecret
+  -     git config --global credential.helper /usr/libexec/git/git-credential-libsecret
 
 ### Qt
 
@@ -59,7 +60,9 @@
 ### Firefox
 
 - #### [User Chrome instructions](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
+- #### [User Chrome instructions](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
 
+- #### [How to move sidebar to the right](https://www.simplehelp.net/2008/09/04/how-to-move-your-sidebar-to-the-right-side-of-firefox/)
 - #### [How to move sidebar to the right](https://www.simplehelp.net/2008/09/04/how-to-move-your-sidebar-to-the-right-side-of-firefox/)
 
   - Make sure `#sidebar-header` visibility is not collapsed in userChrome.css
@@ -75,3 +78,9 @@
   - gfx.webrender.all true
   - gfx.webrender.compositor true
   - gfx.webrender.compositor.force-enabled
+
+### Telegram
+
+flatpak command line arg to fix rendering resolution:
+
+    flatpak override --env=QT_SCALE_FACTOR_ROUNDING_POLICY=Round org.telegram.desktop
