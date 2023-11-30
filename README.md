@@ -83,3 +83,7 @@ flatpak QT environment variable to fix rendering resolution:
   - gfx.webrender.all true
   - gfx.webrender.compositor true
   - gfx.webrender.compositor.force-enabled
+ 
+  #### Flatpak
+  - Add: `google-noto-sans-cjk-fonts`
+  - Remove: `sudo zypper remove xorg-x11-fonts xorg-x11-fonts-legacy`
