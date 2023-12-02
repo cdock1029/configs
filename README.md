@@ -35,6 +35,10 @@ flatpak QT environment variable to fix rendering resolution:
 
     flatpak override --env=QT_SCALE_FACTOR_ROUNDING_POLICY=Round org.telegram.desktop
 
+### Environment
+- use KDE file chooser `export GTK_USE_PORTAL=1`
+
+
 ## Progamming
 
 ### Git
