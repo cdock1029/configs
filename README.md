@@ -28,6 +28,19 @@
   - Click files selects them
 - Input Devices
   - Keyboard: Delay 356ms
+ 
+### Zypper / Yast
+- Remove and lock packages (`sudo zypper al`) or mark taboo in Yast:
+  - akonadi-contact
+  - discover
+  - games (pattern)
+  - kde_games (pattern)
+  - kde_office (pattern)
+  - office (pattern)
+  - libdvdcss2
+  - plasma5-pk-updates
+  - xorg-x11-fonts
+  - xorg-x11-fonts-legacy
 
 ### Telegram
 
@@ -90,4 +103,4 @@ flatpak QT environment variable to fix rendering resolution:
  
   #### Flatpak
   - Add: `google-noto-sans-cjk-fonts`
-  - Remove: `sudo zypper remove xorg-x11-fonts xorg-x11-fonts-legacy`
+  - Remove: `sudo zypper remove xorg-x11-fonts xorg-x11-fonts-legacy` and add lock to prevent re-install: `sudo zypper al xorg-x11-fonts xorg-x11-fonts-legacy`
