@@ -42,6 +42,8 @@
   - xorg-x11-fonts
   - xorg-x11-fonts-legacy
   - MozillaFirefox (if using flatpak. this was randomly re-installed)
+ 
+  - [Undoing/removing pacman vendor change and removing pacman packages](https://forums.opensuse.org/t/undoing-removing-pacman-vendor-change-and-removing-pacman-packages/143223/10)
 
 ### Telegram
 
