@@ -110,3 +110,4 @@ flatpak QT environment variable to fix rendering resolution:
   #### Flatpak
   - Add: `google-noto-sans-cjk-fonts`
   - Remove: `sudo zypper remove xorg-x11-fonts xorg-x11-fonts-legacy` and add lock to prevent re-install: `sudo zypper al xorg-x11-fonts xorg-x11-fonts-legacy`
+  - Configuration that might be needed for apps, in `.profile`: `export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/cdock/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"`
