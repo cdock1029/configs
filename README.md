@@ -50,6 +50,9 @@ flatpak QT environment variable to fix rendering resolution:
 
 ### Environment
 - use KDE file chooser `export GTK_USE_PORTAL=1`
+- [KDE Developer setup](https://community.kde.org/Get_Involved/development/Set_up_a_development_environment#Disable_indexing_for_your_development_environment): Disable indexing for your development environment
+
+> You'll want to disable indexing for your development-related git repos and the files they will build and install. Add the directory ~/kde to the exclusions list in System Settings > Workspace > Search > File Search
 
 
 ## Progamming
