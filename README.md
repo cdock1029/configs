@@ -41,6 +41,7 @@
   - plasma5-pk-updates
   - xorg-x11-fonts
   - xorg-x11-fonts-legacy
+  - MozillaFirefox (if using flatpak. this was randomly re-installed)
 
 ### Telegram
 
