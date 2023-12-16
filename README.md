@@ -89,6 +89,9 @@ flatpak QT environment variable to fix rendering resolution:
   Pass flags to `flatpak`:
   https://github.com/flatpak/flatpak/issues/2913#issuecomment-944976842
 
+  Like this below, but desktop files are in /var:
+  `/var/lib/flatpak/exports/share/applications/com.brave.Browser.desktop`
+
   > So in summary what I ended up doing was following @JKAnderson409 's advice and did this:
   > 
   > ```shell
