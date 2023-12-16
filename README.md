@@ -122,7 +122,10 @@ flatpak QT environment variable to fix rendering resolution:
 - #### [User Chrome instructions](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
   - Windows app store Firefox location: `C:\Users\ms\AppData\Local\Packages\Mozilla.Firefox_abcdefghij\LocalCache\Roaming\Mozilla\Firefox\Profiles\1pxxyyzz.default-release\chrome\userContent.css`
 
-
+  #### firefox smooth scrolling
+  - Add to `.profile`
+  `export MOZ_USE_XINPUT2=1`
+  
   #### `about:config`
 
   ##### GPU (not sure what's necessary now)
