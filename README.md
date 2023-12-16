@@ -86,6 +86,29 @@ flatpak QT environment variable to fix rendering resolution:
 - hardware acceleration [Flags](https://bbs.archlinux.org/viewtopic.php?id=244031&p=33)
   `--ignore-gpu-blocklist --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,VaapiVideoDecodeLinuxGL,VaapiIgnoreDriverChecks --disable-features=UseChromeOSDirectVideoDecoder,UseSkiaRenderer`
 
+  Pass flags to `flatpak`:
+  https://github.com/flatpak/flatpak/issues/2913#issuecomment-944976842
+
+  > So in summary what I ended up doing was following @JKAnderson409 's advice and did this:
+  > 
+  > ```shell
+  > cp ~/.local/share/flatpak/exports/share/applications/org.signal.Signal.desktop \
+  >    ~/.local/share/applications/
+  > 
+  > # Edit copy to my liking without modifying the original.
+  > vim ~/.local/share/applications/org.signal.Signal.desktop 
+  > ```
+  > 
+  > My custom `~/.local/share/applications/org.signal.Signal.desktop` now looks like this:
+  > 
+  > ```shell
+  > [Desktop Entry]
+  > Name=Signal
+  > Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=signal --file-forwarding org.signal.Signal --enable-features=UseOzonePlatform --ozone-platform=wayland  @@u %U @@
+  > 
+  > # ...more stuff below this line, which I did not modify
+  > ```
+
 ### Firefox
 - Install Tab Center Reborn extension
 - #### [How to move sidebar to the right](https://www.simplehelp.net/2008/09/04/how-to-move-your-sidebar-to-the-right-side-of-firefox/)
