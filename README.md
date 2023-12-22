@@ -6,6 +6,10 @@
 
 - For `3840x2400` X1 Carbon
   - Display and Monitor Global Scale: 168.75%
+ 
+#### [Integer Scaling, forget about fractional scaling](https://tonsky.me/blog/monitors/)
+- Strong case for integer (200%) scaling. Aligns to pixels accurately, and scales icons better on KDE
+
 
 ### Fonts
 
