@@ -148,6 +148,15 @@ flatpak QT environment variable to fix rendering resolution:
       Everything that is normally stored in $HOME is in `~/.var/app/org.mozilla.firefox/`. You want the "Root Directory":
       `~/.var/app/org.mozilla.firefox/.mozilla/firefox/[profile name]`
 
+  - MPV Config:
+    `.var/app/io.mpv.Mpv/config/mpv/mpv.conf `
+    
+    ```
+    profile=gpu-hq
+    vo=gpu
+    hwdec=auto
+    ```
+
 ### NextDNS
 https://github.com/yokoffing/NextDNS-Config#blocklists-1
   
