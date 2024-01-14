@@ -31,6 +31,9 @@ https://www.reddit.com/r/kde/comments/knnuld/kwin_and_nvidia/
 
 https://bugs.kde.org/show_bug.cgi?id=346275
 
+compositor, 30 bit
+https://bugs.kde.org/show_bug.cgi?id=406302#c8
+
 # IMPORTANT
 https://bugs.kde.org/show_bug.cgi?id=442386
 
