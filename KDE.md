@@ -31,3 +31,19 @@ https://www.reddit.com/r/kde/comments/knnuld/kwin_and_nvidia/
 
 https://bugs.kde.org/show_bug.cgi?id=346275
 
+# IMPORTANT
+https://bugs.kde.org/show_bug.cgi?id=442386
+
+> JFYI, I have to add 
+> `export QT_XCB_GL_INTEGRATION=xcb_egl`
+> to `kwin.sh` to make composing work (arch, intel with modesetting, x11, plasma 5.26.5 )
+
+Also
+```
+Again a short update. During the last few weeks it has been shown that the best way to enforce EGL in kwin is through the "KWIN_OPENGL_INTERFACE=EGL" and not the "KWIN_COMPOSE=O2ES" variable.
+
+This will effectively keep the OpenGL 2.0 or OpenGL 3.1 "function feature set" and just force EGL over GLX.
+
+sudo nano /etc/profile.d/kwin.sh
+export KWIN_OPENGL_INTERFACE=EGL
+```
