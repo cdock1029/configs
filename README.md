@@ -21,6 +21,14 @@
   - Toolbar: Noto Sans 10pt
   - Menu: Noto Sans 11pt
   - Window title: Noto Sans 11pt
+ 
+  #### Possible use of OTF for better rendering
+    https://www.reddit.com/r/kde/comments/kzf6gx/best_fonts_and_rendering_settingsoptions/gkjpb86/
+    Cantarell OTF
+    
+    https://github.com/tonsky/FiraCode/issues/1233#issuecomment-1448651984
+    Config for fixing TTF? In `/etc/environment`
+    `FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"`
 
 ### Settings
 
