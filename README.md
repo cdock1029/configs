@@ -29,6 +29,7 @@
     https://github.com/tonsky/FiraCode/issues/1233#issuecomment-1448651984
     Config for fixing TTF? In `/etc/environment`
     `FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"`
+    https://www.reddit.com/r/elementaryos/comments/tpvxed/do_you_feel_like_the_default_font_inter_is_too/
 
 ### Settings
 
