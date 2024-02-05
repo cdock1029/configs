@@ -39,6 +39,12 @@
   https://venam.net/blog/unix/2020/09/14/playing_with_fonts.html
 
   https://wiki.archlinux.org/title/font_configuration#Applications_overriding_hinting
+  `~/.config/kdeglobals` overrides settings for Firefox etc
+  ```
+  XftAntialias=true
+  XftHintStyle=hintfull
+  XftSubPixel=none
+  ```
 
 ### Settings
 
