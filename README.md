@@ -45,6 +45,21 @@
   XftHintStyle=hintfull
   XftSubPixel=none
   ```
+  - Flatpak special config dir:
+    - `~/.var/app/org.mozilla.firefox/config/fontconfig/fonts.conf`
+    - override a font:
+    ```xml
+    <?xml version="1.0"?>
+    <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+    <fontconfig>    
+      <match>
+        <test name="family"><string>Liberation Mono</string></test>
+          <edit name="family" mode="assign" binding="strong">
+            <string>JetBrains Mono</string>
+          </edit>
+      </match>
+    </fontconfig>
+    ```
 
 ### Settings
 
