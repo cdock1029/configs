@@ -173,7 +173,7 @@ flatpak QT environment variable to fix rendering resolution:
 
   ##### GPU (not sure what's necessary now)
 
-  - media.ffmpeg.vaapi.enabled true
+  - layers.gpu-process.enabled true Lowers dropped frames on Youtube
   - gfx.webrender.enabled true
   - gfx.webrender.all true
   - gfx.webrender.compositor true
