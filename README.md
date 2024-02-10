@@ -113,7 +113,7 @@ https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Consis
     export KWIN_TRIPLE_BUFFER=1
     export KWIN_USE_INTEL_SWAP_EVENT=1
     ```
-
+- see Firefox egl settings
 
 
 ## Progamming
@@ -193,6 +193,8 @@ https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Consis
   - gfx.webrender.all true
   - gfx.webrender.compositor true
   - gfx.webrender.compositor.force-enabled
+  - gfx.swap-interval.egl (see KWIN/Plasma/KDE egl settings)
+  - gfx.x11-egl.force-enabled
  
   #### Flatpak
   - Add: `google-noto-sans-cjk-fonts`
