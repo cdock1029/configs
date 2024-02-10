@@ -50,3 +50,17 @@ This will effectively keep the OpenGL 2.0 or OpenGL 3.1 "function feature set" a
 sudo nano /etc/profile.d/kwin.sh
 export KWIN_OPENGL_INTERFACE=EGL
 ```
+#### KWIN/Plasma/KDE
+
+https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Consistent_file_dialog_under_KDE_Plasma
+- `export PLASMA_USE_QT_SCALING=1`
+- `.config/plasma-workspace/env/kwin.sh`
+  - ```bash
+    #!/bin/sh
+
+    export QT_XCB_GL_INTEGRATION=xcb_egl
+    export KWIN_OPENGL_INTERFACE=egl
+    export KWIN_TRIPLE_BUFFER=1
+    export KWIN_USE_INTEL_SWAP_EVENT=1
+    ```
+- see Firefox egl settings
