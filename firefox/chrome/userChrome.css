@@ -1,36 +1,6 @@
-/*
-#TabsToolbar-customization-target {
-	visibility: collapse !important;
-}
-*/
-
-/*
-#TabsToolbar .titlebar-buttonbox-container {
-    visibility: collapse;
-}
-*/
-
 #sidebar-header {
   visibility: collapse;
 }
-
-#sidebar-splitter.sidebar-splitter {
-  width: 3px !important;
-  border: none !important;
-}
-
-/* new */
-
-/*
- * https://github.com/ranmaru22/firefox-vertical-tabs/blob/main/userChrome.css
- */
-
-/* Fixes wrong coloring applied with --toolbar-bgcolor by Firefox (#101)
-.browser-toolbar:not(.titlebar-color){ 
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-*/
 
 #TabsToolbar:not([customizing="true"]) {
   visibility: collapse !important;
@@ -38,4 +8,10 @@
 
 #toolbar-menubar {
   padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+#sidebar-splitter {
+  width: 4px !important;
+  border-style: none !important;
 }
