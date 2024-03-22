@@ -179,6 +179,7 @@ flatpak QT environment variable to fix rendering resolution:
   - gfx.webrender.compositor.force-enabled
   - gfx.swap-interval.egl (see KWIN/Plasma/KDE egl settings)
   - gfx.x11-egl.force-enabled
+  - Fix stuttering twitter and other videos: `flatpak install org.freedesktop.Platform.ffmpeg-full` and `media.hardware-video-decoding.force-enabled=true (if necessary)` 
  
   #### Flatpak
   - Add: `google-noto-sans-cjk-fonts`
