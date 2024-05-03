@@ -180,7 +180,8 @@ flatpak QT environment variable to fix rendering resolution:
   - gfx.swap-interval.egl (see KWIN/Plasma/KDE egl settings)
   - gfx.x11-egl.force-enabled
   - Fix stuttering twitter and other videos: `flatpak install org.freedesktop.Platform.ffmpeg-full` and `media.hardware-video-decoding.force-enabled=true (if necessary)` 
- 
+#### Windows
+  - about:support > Media > codec support information > AV1 install extension > Microsoft Store
   #### Flatpak
   - Add: `google-noto-sans-cjk-fonts`
   - Remove: `sudo zypper remove xorg-x11-fonts xorg-x11-fonts-legacy` and add lock to prevent re-install: `sudo zypper al xorg-x11-fonts xorg-x11-fonts-legacy`
