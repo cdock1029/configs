@@ -198,6 +198,8 @@ flatpak QT environment variable to fix rendering resolution:
     vo=gpu
     hwdec=auto
     ```
+#### Color Profile
+- Browsers https://gregbenzphotography.com/photography-tips/how-to-setup-proper-color-management-in-a-web-browser/
 
 ### NextDNS
 https://github.com/yokoffing/NextDNS-Config#blocklists-1
