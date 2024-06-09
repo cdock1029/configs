@@ -200,6 +200,9 @@ flatpak QT environment variable to fix rendering resolution:
     ```
 #### Color Profile
 - Browsers https://gregbenzphotography.com/photography-tips/how-to-setup-proper-color-management-in-a-web-browser/
+- https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/3.5/ICC_color_correction_in_Firefox
+- gfx.color_management.rendering_intent = 1
+- gfx.color_management.mode = 1
 
 ### NextDNS
 https://github.com/yokoffing/NextDNS-Config#blocklists-1
