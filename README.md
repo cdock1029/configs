@@ -179,7 +179,22 @@ flatpak QT environment variable to fix rendering resolution:
   - gfx.webrender.compositor.force-enabled
   - gfx.swap-interval.egl (see KWIN/Plasma/KDE egl settings)
   - gfx.x11-egl.force-enabled
-  - Fix stuttering twitter and other videos: `flatpak install org.freedesktop.Platform.ffmpeg-full` and `media.hardware-video-decoding.force-enabled=true (if necessary)` 
+  - Fix stuttering twitter and other videos: `flatpak install org.freedesktop.Platform.ffmpeg-full` and `media.hardware-video-decoding.force-enabled=true (if necessary)`
+  #### Performance
+    - https://www.reddit.com/r/firefox/comments/107fj69/comment/j3ou262/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+    - accessibility.force_disabled 1
+    - reader.parse-on-load.enabled false
+    - network.dnsCacheEntries 4096
+    - security.remote_settings.crlite_filters.enabled true
+    - security.pki.crlite_mode 2
+    - browser.cache.disk.metadata_memory_limit 6000
+    - browser.cache.frecency_half_life_hours 8
+    - browser.sessionstore.interval 900000
+    - browser.sessionstore.interval.idle 1800000
+    - https://www.reddit.com/r/browsers/comments/1bb81y8/firefox_the_only_browser_doing_certificate/
+    - security.pki.crlite_mode = 2
+    - security.remote_settings.crlite_filters.enabled = true
+
 #### Windows
   - about:support > Media > codec support information > AV1 install extension > Microsoft Store
   #### Flatpak
@@ -206,4 +221,5 @@ flatpak QT environment variable to fix rendering resolution:
 
 ### NextDNS
 https://github.com/yokoffing/NextDNS-Config#blocklists-1
+
   
