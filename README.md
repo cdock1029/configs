@@ -225,6 +225,9 @@ https://github.com/yokoffing/NextDNS-Config#blocklists-1
 ## Windows
 
 #### TCP Autotuning Level
+`netsh int tcp set global autotuninglevel=experimental`
+
+`netsh int tcp set global autotuninglevel=normal`
 - may be fix for slow wifi https://learn.microsoft.com/en-us/archive/blogs/netgeeks/a-word-about-autotuninglevel-tcp-receive-auto-tuning-level-explained
 - https://www.reddit.com/r/YouShouldKnow/comments/d6vzet/ysk_that_windows_10_can_seriously_limit_your/
 - https://www.reddit.com/r/HomeNetworking/comments/ma5fvd/wifi_slow_on_5ghz_intel_wifi_6_ax200_160mhz/
