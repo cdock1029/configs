@@ -222,4 +222,12 @@ flatpak QT environment variable to fix rendering resolution:
 ### NextDNS
 https://github.com/yokoffing/NextDNS-Config#blocklists-1
 
+## Windows
+
+#### TCP Autotuning Level
+- may be fix for slow wifi https://learn.microsoft.com/en-us/archive/blogs/netgeeks/a-word-about-autotuninglevel-tcp-receive-auto-tuning-level-explained
+- https://www.reddit.com/r/YouShouldKnow/comments/d6vzet/ysk_that_windows_10_can_seriously_limit_your/
+- https://www.reddit.com/r/HomeNetworking/comments/ma5fvd/wifi_slow_on_5ghz_intel_wifi_6_ax200_160mhz/
+- https://www.reddit.com/r/LenovoLegion/comments/1d85w0k/ax211_wifi_slow_issue_solved_two_things_i_didnt/
+
   
