@@ -225,6 +225,10 @@ https://github.com/yokoffing/NextDNS-Config#blocklists-1
 ## Windows
 
 #### TCP Autotuning Level
+`Get-NetTCPSetting`
+
+`netsh int tcp show global`
+
 `netsh int tcp set global autotuninglevel=experimental`
 
 `netsh int tcp set global autotuninglevel=normal`
