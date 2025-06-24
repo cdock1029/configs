@@ -1,4 +1,4 @@
-### Ptyxis terminal
+### Ptyxis terminal transparency
 
 ```shell
 flatpak run --command=/bin/bash app.devsuite.Ptyxis
