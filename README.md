@@ -209,9 +209,9 @@ flatpak QT environment variable to fix rendering resolution:
     `.var/app/io.mpv.Mpv/config/mpv/mpv.conf `
     
     ```
-    profile=gpu-hq
-    vo=gpu
-    hwdec=auto
+    hwdec=auto-safe
+    gpu-api=vulkan
+    vo=gpu-next
     ```
 #### Color Profile
 - Browsers https://gregbenzphotography.com/photography-tips/how-to-setup-proper-color-management-in-a-web-browser/
