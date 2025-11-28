@@ -209,9 +209,29 @@ flatpak QT environment variable to fix rendering resolution:
     `.var/app/io.mpv.Mpv/config/mpv/mpv.conf `
     
     ```
+    # -- Hardware Decoding --
     hwdec=auto-safe
+
+    # -- Rendering & Output --
+    # Vulcan is generally faster for high-res scaling on Linux
     gpu-api=vulkan
+
     vo=gpu-next
+    video-sync=display-resample
+
+    # --- Default Scaler (High Quality for 720p/1080p) ---
+    # Lanczos is sharp and great for upscaling lower res content
+    scale=lanczos
+    cscale=lanczos
+    dscale=mitchell
+
+    # --- 4K/5K Optimization Profile ---
+    # This block only activates if the video width is greater than 3800 pixels
+    [4k-plus]
+    profile-cond=width >= 3800
+    scale=bilinear
+    cscale=bilinear
+    dscale=bilinear
     ```
 #### Color Profile
 - Browsers https://gregbenzphotography.com/photography-tips/how-to-setup-proper-color-management-in-a-web-browser/
