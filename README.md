@@ -242,6 +242,35 @@ flatpak QT environment variable to fix rendering resolution:
 ### NextDNS
 https://github.com/yokoffing/NextDNS-Config#blocklists-1
 
+## Fedora
+
+#### Responsiveness tuning
+
+`/etc/sysctl.d/99-workstation.conf`
+
+```bash
+# --- Memory Management (64GB RAM Profile) ---
+# Prefer physical RAM over swap/zram. Only swap if memory is critically low.
+vm.swappiness = 10
+
+# Aggressively keep file system metadata (dentries/inodes) in RAM.
+# Makes IDE operations like "Find in Files" or Git status instant.
+vm.vfs_cache_pressure = 10
+
+# --- Write Buffer Tuning (Anti-Stutter) ---
+# Start background writes to disk as soon as 32MB of data is dirty.
+vm.dirty_background_bytes = 33554432
+
+# Force processes to write synchronously if dirty data hits 128MB.
+# Prevents massive 10GB+ buffers that freeze the system when flushed.
+vm.dirty_bytes = 134217728
+
+# --- File Watchers (IDE Support) ---
+# Essential for Rider and Qt Creator to watch large source trees.
+fs.inotify.max_user_watches = 524288
+fs.inotify.max_user_instances = 512
+```
+
 ## Windows
 
 #### TCP Autotuning Level
@@ -256,5 +285,3 @@ https://github.com/yokoffing/NextDNS-Config#blocklists-1
 - https://www.reddit.com/r/YouShouldKnow/comments/d6vzet/ysk_that_windows_10_can_seriously_limit_your/
 - https://www.reddit.com/r/HomeNetworking/comments/ma5fvd/wifi_slow_on_5ghz_intel_wifi_6_ax200_160mhz/
 - https://www.reddit.com/r/LenovoLegion/comments/1d85w0k/ax211_wifi_slow_issue_solved_two_things_i_didnt/
-
-  
