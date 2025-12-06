@@ -244,6 +244,8 @@ https://github.com/yokoffing/NextDNS-Config#blocklists-1
 
 ## Fedora
 
+Setup: https://github.com/wz790/Fedora-Noble-Setup
+
 #### Responsiveness tuning
 
 `/etc/sysctl.d/99-workstation.conf`
